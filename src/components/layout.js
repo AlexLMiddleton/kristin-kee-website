@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import "../pages/mystyles.scss"
 
 import Header from "./header"
 import "./layout.css"
@@ -35,7 +36,7 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer>
+        <footer style={{textAlign: 'center'}}>
           © {new Date().getFullYear()}, Kristin Kee
         </footer>
       </div>
