@@ -37,7 +37,7 @@ const Homepage = (props) => {
                 description
               }
               kristinKeeGraphic {
-                fluid(maxWidth: 430) {
+                fluid(maxWidth: 425) {
                   src
                 }
                 description
@@ -87,54 +87,14 @@ const Homepage = (props) => {
       }
       
     `)
-
-    // const options = {
-    //     renderNode: {
-    //         "embedded-asset-block": (node) => {
-    //             const alt = node.data.target.fields.title['en-US']
-    //             const url = node.data.target.fields.file['en-US'].url
-    //             return( 
-    //             <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-    //                 <img alt={alt} src={url} />
-    //             </div>)
-    //         }
-    //     }
-    // }
+    
     return (
         <Layout>
-            <div>
-                <div style={{backgroundColor: '#2eccbd'}}>
-                    <br />
-                    {/* <img alt={data.allContentfulHomePage.edges[0].node.initials.description} src={data.allContentfulHomePage.edges[0].node.initials.fluid.src} /> */}
-                </div>
-                {/* <nav className="navbar" style={{backgroundColor: '#2eccbd'}} role="navigation" aria-label="main navigation">
-                    <div className="navbar-brand">
-                        <a className="navbar-item" href="https://www.kristinkee.com" />
-                            <a role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                            <span aria-hidden="true"></span>
-                            <span aria-hidden="true"></span>
-                            <span aria-hidden="true"></span>
-                            </a>
-                        </div>
-                    <div id="navbarBasicExample" className="navbar-menu">
-                        <div className="navbar-start">
-                            <a className="navbar-item has-text-white is-active">
-                                Home
-                            </a>
-                            <a className="navbar-item has-text-white is-active">
-                                About
-                            </a>
-                            <a className="navbar-item has-text-white is-active">
-                                Contact
-                            </a>
-                        </div>
-                    </div>
-                </nav> */}
-
+            <div>               
                 <div className="columns">
                     <div className="column is-half">
                         <img alt={data.allContentfulHomePage.edges[0].node.myMoneyMaker.description} src={data.allContentfulHomePage.edges[0].node.myMoneyMaker.fluid.src} />
-                        <img alt={data.allContentfulHomePage.edges[0].node.placeHolder.description} src={data.allContentfulHomePage.edges[0].node.placeHolder.fluid.src} />
+                        <img className="is-hidden-mobile" alt={data.allContentfulHomePage.edges[0].node.placeHolder.description} src={data.allContentfulHomePage.edges[0].node.placeHolder.fluid.src} />
                     </div>
                     <div className="column is-half" style={{overflow: 'scroll', height: 780}}>
                         <img alt={data.allContentfulHomePage.edges[0].node.kristinKeeGraphic.description} src={data.allContentfulHomePage.edges[0].node.kristinKeeGraphic.fluid.src} />
