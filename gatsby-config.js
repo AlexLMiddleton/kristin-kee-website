@@ -4,9 +4,9 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Kristin Kee Marketing`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    author: `Kristin Kee`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -20,6 +20,18 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-facebook-analytics`,
+      options: {
+        appId: process.env.FACEBOOK_ANALYTICS_APPID,
+        includeInDevelopment: true,
+        // Include debug version of sdk
+        // Defaults to false meaning the library will load sdk.js
+        debug: false,
+        // Can select your language, default will load english
+        language: "en_US"
+      }
+    },
     { 
       resolve: `gatsby-plugin-manifest`,
       options: {

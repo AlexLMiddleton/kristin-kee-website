@@ -1,11 +1,13 @@
-import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
-import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
-import "./mystyles.scss"
+import React from 'react'
+import { graphql, useStaticQuery } from 'gatsby'
+import Layout from '../components/layout'
+import Navbar from '../components/Navbar/Navbar'
+import Signature from '../components/Hero/Signature'
+import Process from '../components/Process/Process'
 
-import Layout from "../components/layout"
 
-const Homepage = (props) => {
+
+const Index = (props) => {
     const data = useStaticQuery(graphql`
     query MyQuery {
         allContentfulHomePage {
@@ -89,48 +91,17 @@ const Homepage = (props) => {
     `)
     
     return (
-        <Layout>
-            <div>               
-                <div className="columns">
-                    <div className="column is-half">
-                        <img alt={data.allContentfulHomePage.edges[0].node.myMoneyMaker.description} src={data.allContentfulHomePage.edges[0].node.myMoneyMaker.fluid.src} />
-                        <img className="is-hidden-mobile" alt={data.allContentfulHomePage.edges[0].node.placeHolder.description} src={data.allContentfulHomePage.edges[0].node.placeHolder.fluid.src} />
-                    </div>
-                    <div className="column is-half" style={{overflow: 'scroll', height: 780}}>
-                        <img alt={data.allContentfulHomePage.edges[0].node.kristinKeeGraphic.description} src={data.allContentfulHomePage.edges[0].node.kristinKeeGraphic.fluid.src} />
-                        <h3 className="title is-size-3">{data.allContentfulHomePage.edges[0].node.myTitle}</h3>
-                        {documentToReactComponents(data.contentfulHomePageDescriptionRichTextNode.json)}
-                        <br />
-                        <h3 className="title is-size-3">{data.allContentfulHomePage.edges[0].node.digitalSolutions}</h3>
-                        {documentToReactComponents(data.contentfulHomePageUniqueSolutionsDescriptionRichTextNode.json)}
-                        <br />
-                        <h3 className="title is-size-3">{data.allContentfulHomePage.edges[0].node.curatingCompanyCulture}</h3>
-                        {documentToReactComponents(data.contentfulHomePageCompanyCultureDescriptionRichTextNode.json)}
-                        <br />
-                        <h3 className="title is-size-3">{data.allContentfulHomePage.edges[0].node.howAreTheyConnected}</h3>
-                        {documentToReactComponents(data.contentfulHomePageConnectedDescriptionRichTextNode.json)}
-                    </div>
-                </div>
-               <img alt={data.allContentfulHomePage.edges[0].node.servicesOfferedHeader.description} src={data.allContentfulHomePage.edges[0].node.servicesOfferedHeader.fluid.src} />
-               <div className="columns is-gapless">
-                <div className="column is-half">
-                    <img alt={data.allContentfulHomePage.edges[0].node.digitalServicesOfferedImage.description} src={data.allContentfulHomePage.edges[0].node.digitalServicesOfferedImage.fluid.src} />
-                </div>
-                <div className="column is-half">
-                    <img alt={data.allContentfulHomePage.edges[0].node.strategicServicesImage.description} src={data.allContentfulHomePage.edges[0].node.strategicServicesImage.fluid.src} />
-                </div>
-               </div>
+      <Layout>
+        <div className='container'>
+            <Navbar />
+            <div className='hero-container'>
+                <Signature />
+                <h3>Strategic Social Media Marketing</h3>
             </div>
-            <footer>
-                <div>
-                    <h3 className="title is-size-3 has-text-centered is-inline-block">{data.allContentfulHomePage.edges[0].node.contactMe}</h3>
-                    <div className="has-text-centered">
-                        {documentToReactComponents(data.contentfulHomePageContactMeInformationRichTextNode.json)}
-                    </div>
-                </div>
-            </footer>
-        </Layout>
+            <Process />
+        </div>
+      </Layout>
     )
 }
 
-export default Homepage
+export default Index
