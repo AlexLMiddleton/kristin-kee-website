@@ -7,29 +7,23 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-// import { useStaticQuery, graphql } from "gatsby"
-import "../pages/mystyles.scss"
 
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+
+import "../pages/mystyles.scss"
 import "./layout.css"
-import Navbar from './Navbar'
+import Navbar from './Navbar/Navbar'
 
 const Layout = ({ children }) => {
   return (
     <>
       <Navbar />
-      <div
-        style={{
-          margin: `0 auto`,
-          marginTop: 64,
-          maxWidth: 960,
-          padding: `0px 1.0875rem 1.45rem`,
-          paddingTop: 0,
-        }}
-      >
+      <div>
         <main>{children}</main>
-        <footer style={{textAlign: 'center'}}>
+        {/* <footer style={{textAlign: 'center'}}>
           © {new Date().getFullYear()}, Kristin Kee
-        </footer>
+        </footer> */}
       </div>
     </>
   )

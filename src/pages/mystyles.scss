@@ -1,6 +1,23 @@
 @charset "utf-8";
 
-// If need, change your variables before importing Bulma
-// $title-color: #000000;
+html {
+    margin: 0;
+    padding: 0;
+}
 
-@import "~bulma/bulma.sass";
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2eccbd;
+    h1 {
+        text-align: center;
+        color: white;
+    }
+    h3 {
+        text-align: center;
+        color: white;
+    }
+}
