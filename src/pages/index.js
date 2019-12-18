@@ -91,16 +91,19 @@ const Index = (props) => {
     `)
     
     return (
-      <Layout>
-        <div className='container'>
-            <Navbar />
-            <div className='hero-container'>
-                <Signature />
-                <h3>Strategic Social Media Marketing</h3>
-            </div>
-            <Process />
-        </div>
-      </Layout>
+      // <Layout>
+      //   <div className='container'>
+      //       <Navbar />
+      //       <div className='hero-container'>
+      //           <Signature />
+      //           <h3>Strategic Social Media Marketing</h3>
+      //       </div>
+      //       <Process />
+      //   </div>
+      // </Layout>
+      <div>
+        <h1 style={{textAlign: 'center', marginTop: '50vh'}}>Under construction.  Check back soon!</h1>
+      </div>
     )
 }
 
