@@ -1,0 +1,30 @@
+.form-container {
+    width: 100%;
+    height: 100vh;
+    background-color: #2eccbd;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    form {
+        color: white;
+        border-radius: 5px;
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+
+        label {
+            font-weight: 700;
+        }
+
+        input, textarea {
+            width: 100%;
+        }
+        
+        .button-container {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
