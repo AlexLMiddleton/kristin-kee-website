@@ -99,10 +99,34 @@ header {
         }
 
         ul li {
-            padding: 1rem 1.5rem 1rem 5.5rem;
+            margin-left: 30%;
             list-style: none;
             font-size: 2.75rem;
+            text-align: left;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .sidenav {
+        height: 100%;
+        width: 100%;
+
+        span {
+            position: absolute;
+            top: 75%;
             text-align: center;
+            color: #2eccbd;
+            cursor: pointer;
+            font-size: 5em;
+        }
+
+        ul li {
+            margin-left: 7%;
+            list-style: none;
+            font-size: 2.75rem;
+            text-align: left;
+
         }
     }
 }
