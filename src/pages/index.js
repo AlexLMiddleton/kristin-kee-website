@@ -13,7 +13,7 @@ const Index = (props) => {
         <div className='container'>
             <Navbar />
             <div className='hero-container'>
-                <Signature />
+                { typeof window !== `undefined` ? <Signature /> : null }
                 <h3>Strategic Social Media Marketing</h3>
             </div>
             <Process />
