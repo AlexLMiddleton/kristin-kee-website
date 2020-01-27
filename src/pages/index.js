@@ -5,8 +5,6 @@ import Signature from '../components/Hero/Signature'
 import Process from '../components/Process/Process'
 import Results from '../components/Results/Results'
 
-
-
 const Index = (props) => {    
     return (
       <Layout>

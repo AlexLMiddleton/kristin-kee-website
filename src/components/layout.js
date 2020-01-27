@@ -8,12 +8,16 @@ import Navbar from './Navbar/Navbar'
 const Layout = ({ children }) => {
   return (
     <>
+      <span id="top"></span>
       <Navbar />
       <div>
         <main>{children}</main>
-        {/* <footer style={{textAlign: 'center'}}>
-          © {new Date().getFullYear()}, Kristin Kee
-        </footer> */}
+        <div style={{textAlign: 'center', backgroundColor: '#2eccbd', color: 'white'}}>
+          <a href='#top'>Back to top</a>
+          <footer>
+            © {new Date().getFullYear()}, Kristin Kee
+          </footer>
+        </div>
       </div>
     </>
   )

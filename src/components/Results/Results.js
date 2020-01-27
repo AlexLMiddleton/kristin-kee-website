@@ -16,6 +16,7 @@ const Results = (props) => {
                         industry="Non-Profit" 
                         description="We helped a local non-profit with branding, telling their story, and establishing a strong social media presence." 
                         outcome={['Increased engagement rate by 923% in first month', 'Increased follower growth rate by 12% in first month', 'Increased follower growth rate by additional 10% in second month']}
+                        url='case-study-1'
                     />
                 </div>
                 <div id="cardTwo">
@@ -23,6 +24,7 @@ const Results = (props) => {
                         industry="Visual Arts" 
                         description="We helped a small business owner grow their social media following and engagement rate in order to increase their sales." 
                         outcome={['Increased engagement rate by 704% in first month', 'Increased follower growth rate by 21% in first month', 'Increased follower growth rate by additional 22% in second month']}
+                        url='case-study-2'
                     />
                 </div>
             </div>

@@ -1,0 +1,21 @@
+.list-container {
+    display: flex;
+    direction: row;
+    justify-content: center;
+
+    .list-one {
+        margin-right: 10%;
+    }
+
+    .list-one, .list-two {
+        margin-top: 3%;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+}
+
+h4 {
+    text-align: center;
+}

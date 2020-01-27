@@ -27,7 +27,7 @@ const Process = (props) => {
                         <a href='/contact'>Contact Us and Start Growing</a>
                     </div>
                     <div className='other-services'>
-                        <h4><a href='/'>Not what you need?  View our other services.</a></h4>
+                        <h3>Not what you need?  View our <a href='/services'><strong>other services.</strong></a></h3>
                     </div>
                 </div>
 

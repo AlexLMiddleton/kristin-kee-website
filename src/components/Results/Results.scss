@@ -23,3 +23,10 @@
         font-family: 'Lato', sans-serif;
     }
   }
+
+  @media only screen and (max-width: 600px) {
+      .flex-container {
+          display: flex;
+          flex-direction: column;
+      }
+    }

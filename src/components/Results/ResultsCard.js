@@ -14,7 +14,7 @@ const ResultsCard = (props) => {
                             {props.outcome.map(prop => <li>{prop}</li>)}
                         </ul>
                     </p>
-                <a href="/fake-page">Learn how we did it...</a>
+                <a href={'/' + (props.url)}>Learn how we did it...</a>
             </div>
         </div>
     )

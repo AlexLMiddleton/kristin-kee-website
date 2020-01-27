@@ -21,7 +21,7 @@ const Navbar = () => {
         <ul>
           <li><FontAwesomeIcon icon={faHome} style={{ color: '#AAA', fontSize: '1.25rem', marginBottom: '2%'}}/> <Link onClick={() => setMenu(!menu)} to='/'>Home</Link></li>
           <br />
-          <li><FontAwesomeIcon icon={faInfoCircle} style={{ color: '#AAA', fontSize: '1.25rem', marginBottom: '2%', marginRight: '1%' }}/> <Link onClick={() => setMenu(!menu)} to='/'>About</Link></li>
+          <li><FontAwesomeIcon icon={faInfoCircle} style={{ color: '#AAA', fontSize: '1.25rem', marginBottom: '2%', marginRight: '1%' }}/> <Link onClick={() => setMenu(!menu)} to='/services'>Services</Link></li>
           <br />
           <li><FontAwesomeIcon icon={faPhone} style={{ color: '#AAA', fontSize: '1.25rem', marginBottom: '2%' }}/> <Link onClick={() => setMenu(!menu)} to='/contact'>Contact</Link></li>
         </ul>
