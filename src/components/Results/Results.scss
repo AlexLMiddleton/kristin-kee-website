@@ -24,9 +24,23 @@
     }
   }
 
-  @media only screen and (max-width: 600px) {
-      .flex-container {
-          display: flex;
-          flex-direction: column;
-      }
+@media only screen and (max-width: 600px) {
+    h1 {
+        text-align: center;
+        background-color: #2ECCBD;
+        color: #F8F8F8;
+        font-family: 'Satisfy', cursive;
+        padding-bottom: 3%;
+        margin: 0;
+        font-size: 3em;
     }
+
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+
+        #cardOne {
+            margin-bottom: 4%;
+        }
+    }
+}

@@ -24,3 +24,11 @@ html {
         color: white;
     }
 }
+
+@media only screen and (max-width: 600px) {
+.hero-container {
+    h3 {
+        margin-top: -8%;
+    }
+}
+}
