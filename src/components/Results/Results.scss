@@ -24,6 +24,46 @@
     }
   }
 
+// @media only screen and (min-width: 600px) and (max-width: 900px) and (orientation: landscape) {
+//     h1 {
+//         text-align: center;
+//         background-color: #2ECCBD;
+//         color: #F8F8F8;
+//         font-family: 'Satisfy', cursive;
+//         padding-top: 5%;
+//         margin: 0;
+//         font-size: 4em;
+//     }
+
+//     .flex-container {
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         background-color: #2ECCBD;
+//         padding-bottom: 5%;
+//     }
+// }
+
+@media only screen and (max-width: 768px) {
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #2ECCBD;
+        padding-bottom: 5%;
+        margin: 0 auto;
+    
+        #cardOne {
+            margin-right: 0;
+            font-family: 'Lato', sans-serif;
+        }
+    
+        #cardTwo {
+            font-family: 'Lato', sans-serif;
+        }
+      }
+    }
+
 @media only screen and (max-width: 600px) {
     h1 {
         text-align: center;
@@ -40,6 +80,7 @@
         flex-direction: column;
 
         #cardOne {
+            margin-right: 0;
             margin-bottom: 4%;
         }
     }
