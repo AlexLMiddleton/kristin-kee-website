@@ -10,10 +10,8 @@ const ResultsCard = (props) => {
                 <p><strong>Industry: </strong>{props.industry}</p>
                 <p><strong>Description: </strong>{props.description}</p>
                 <p><strong>Outcome: </strong>
-                        <ul>
-                            {props.outcome.map(prop => <li>{prop}</li>)}
-                        </ul>
-                    </p>
+                    {props.outcome.map(prop => <li>{prop}</li>)}
+                </p>
                 <a href={'/' + (props.url)}>Learn how we did it...</a>
             </div>
         </div>

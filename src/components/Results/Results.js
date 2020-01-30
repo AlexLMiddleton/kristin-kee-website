@@ -10,7 +10,7 @@ const Results = (props) => {
             <div className='results-header'>
                 <h1>Results</h1>
             </div>
-            <div class="flex-container">
+            <div className="flex-container">
                 <div id="cardOne">
                     <ResultsCard name="Case Study #1" 
                         industry="Non-Profit" 
