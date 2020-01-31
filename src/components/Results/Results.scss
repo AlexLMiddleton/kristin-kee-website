@@ -45,6 +45,16 @@
 // }
 
 @media only screen and (max-width: 768px) {
+    h1 {
+        text-align: center;
+        background-color: #2ECCBD;
+        color: #F8F8F8;
+        font-family: 'Satisfy', cursive;
+        padding: 5% 0 2% 0;
+        margin: 0;
+        font-size: 4em;
+    }
+
     .flex-container {
         display: flex;
         flex-direction: column;
