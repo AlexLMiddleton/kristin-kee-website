@@ -19,11 +19,11 @@ const Navbar = () => {
       <div className='sidenav'>
         <span onClick={() => setMenu(!menu)}>×</span>
         <ul>
-          <li><FontAwesomeIcon icon={faHome} style={{ color: '#AAA', fontSize: '1.25rem', marginBottom: '2%'}}/> <Link onClick={() => setMenu(!menu)} to='/'>Home</Link></li>
+          <li><FontAwesomeIcon className='faicon' icon={faHome} style={{ color: '#AAA', fontSize: '1.25rem', marginBottom: '2%'}}/> <Link onClick={() => setMenu(!menu)} to='/'>Home</Link></li>
           <br />
-          <li><FontAwesomeIcon icon={faInfoCircle} style={{ color: '#AAA', fontSize: '1.25rem', marginBottom: '2%', marginRight: '1%' }}/> <Link onClick={() => setMenu(!menu)} to='/services'>Services</Link></li>
+          <li><FontAwesomeIcon className='faicon' icon={faInfoCircle} style={{ color: '#AAA', fontSize: '1.25rem', marginBottom: '2%' }}/> <Link onClick={() => setMenu(!menu)} to='/services'>Services</Link></li>
           <br />
-          <li><FontAwesomeIcon icon={faPhone} style={{ color: '#AAA', fontSize: '1.25rem', marginBottom: '2%' }}/> <Link onClick={() => setMenu(!menu)} to='/contact'>Contact</Link></li>
+          <li><FontAwesomeIcon className='faicon' icon={faPhone} style={{ color: '#AAA', fontSize: '1.25rem', marginBottom: '2%' }}/> <Link onClick={() => setMenu(!menu)} to='/contact'>Contact</Link></li>
         </ul>
       </div>
       }

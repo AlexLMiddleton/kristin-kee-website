@@ -189,6 +189,45 @@ header {
     }
 }
 
+@media only screen and (max-width: 900px) and (orientation: 'landscape') {
+
+    .sidenav {
+        height: 100vh;
+        width: 100vw;
+
+        span {
+            position: absolute;
+            top: 85%;
+            text-align: center;
+            color: #2eccbd;
+            cursor: pointer;
+            font-size: 5em;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            color: #2eccbd;
+        }
+
+        ul li {
+            margin-left: .1%;
+            list-style: none;
+            font-size: 2.5rem;
+            text-align: left;
+        }
+
+        ul li .faicon {
+            visibility: hidden;
+        }
+    }
+}
+
+
+
 @-webkit-keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
