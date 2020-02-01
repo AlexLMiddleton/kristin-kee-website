@@ -197,7 +197,7 @@ header {
 
         span {
             position: absolute;
-            top: 85%;
+            top: 70%;
             text-align: center;
             color: #2eccbd;
             cursor: pointer;
@@ -218,6 +218,10 @@ header {
             list-style: none;
             font-size: 2.5rem;
             text-align: left;
+        }
+
+        ul li:nth-of-type(1), ul li:nth-of-type(2) {
+            border-right: 1px solid gray;
         }
 
         ul li .faicon {
