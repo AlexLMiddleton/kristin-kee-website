@@ -1,0 +1,31 @@
+.services-offered-container {
+    width: 100%;
+    background-color: #2eccbd;
+    padding-bottom: 1%;
+}
+
+.services-offered-header {
+    background-color: #2eccbd;
+    text-align: center;
+    padding-top: 4%;
+    font-family: 'Satisfy', cursive;
+    font-size: 4em;
+    color: #F8F8F8;
+}
+
+.services-offered-plan {
+    width: 65%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.view-other-services {
+    text-align: center;
+    color: #333;
+    a {
+        text-decoration: none;
+    }
+}

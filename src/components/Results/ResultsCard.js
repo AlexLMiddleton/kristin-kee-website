@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'gatsby'
+import { uuid } from 'uuidv4'
 
 import './ResultsCard.scss'
 
@@ -10,9 +12,9 @@ const ResultsCard = (props) => {
                 <p><strong>Industry: </strong>{props.industry}</p>
                 <p><strong>Description: </strong>{props.description}</p>
                 <p><strong>Outcome: </strong>
-                    {props.outcome.map(prop => <li>{prop}</li>)}
+                    {props.outcome.map(prop => <li key={uuid()}>{prop}</li>)}
                 </p>
-                <a href={'/' + (props.url)}>Learn how we did it...</a>
+                <Link to={'/' + (props.url)}>Learn how we did it...</Link>
             </div>
         </div>
     )

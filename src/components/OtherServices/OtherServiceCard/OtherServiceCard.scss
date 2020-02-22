@@ -1,0 +1,73 @@
+// Original On-Screen Service Container
+.other-service-container {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #999;
+    background-color: #fff;
+    color: #555;
+    margin-bottom: 2%;
+
+    .other-service-title-header {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.other-service-title-container {
+    height: 15em;
+    width: 20em;
+    // transition: 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.other-service-title-container:hover {
+    opacity: 0;
+}
+
+// On-Hover On-Screen Service Container
+.other-service-info-container {
+    position: absolute;
+    height: 15em;
+    width: 20em;
+    transition: 0.1s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    // text-align: center;
+    opacity: 0;
+}
+
+.other-service-info-header {
+    text-align: center;
+    margin: 0;
+    padding: 0.5em 0 0 0;
+}
+
+.other-service-info-container hr {
+    width: 100%;
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+.other-service-info-container .other-service-info-paragraph {
+    font-size: .8em;
+    line-height: 1.2;
+    padding: 1% 2%;
+}
+
+.other-service-info-container a {
+    text-align: center;
+    font-size: .8em;
+}
+
+.other-service-info-container:hover, .other-service-info-container:active {
+    opacity: 1;
+    background-color: #fff;
+    color: #555;
+    transform: scale(1.35);
+    border: 2px solid #999;
+}

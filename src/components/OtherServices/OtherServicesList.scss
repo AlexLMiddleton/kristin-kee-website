@@ -1,0 +1,32 @@
+.services-main {
+    width: 100%;
+    background-color: #2eccbd;
+    padding-bottom: 1%;
+
+    .services-header {
+        background-color: #2eccbd;
+        text-align: center;
+        padding-top: 4%;
+        font-family: 'Satisfy', cursive;
+        font-size: 4em;
+        color: #F8F8F8;
+    }
+}
+
+.services-container {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.list-container {
+    display: flex;
+    direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 2% 0;
+}
+
+
+h4 {
+    text-align: center;
+}

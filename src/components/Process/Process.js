@@ -24,10 +24,10 @@ const Process = (props) => {
                 </div>
                 <div className='process-buttons'>
                     <div className='contact-us'>
-                        <a href='/contact'>Contact Us and Start Growing</a>
+                        <a href='/services'>Select Your Strategy</a>
                     </div>
                     <div className='other-services'>
-                        <h3>Not what you need?  View our <a href='/services'><strong>other services.</strong></a></h3>
+                        {/* <h3>Not what you need?  View our <Link to='/services'><strong>other services.</strong></Link></h3> */}
                     </div>
                 </div>
 
