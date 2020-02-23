@@ -31,6 +31,9 @@
 }
 
 @media only screen and (max-width: 1200px) {
+  .services-offered-header {
+    padding-top: 4%;
+  }
   .services-offered-plan {
     width: 95%;
     margin: 0 auto;
@@ -42,6 +45,9 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .services-offered-header {
+    padding-top: 8%;
+  }
   .services-offered-plan {
     width: 95%;
     margin: 0 auto;
@@ -53,6 +59,9 @@
 }
 
 @media only screen and (max-width: 767px) {
+  .services-offered-header {
+    padding-top: 15%;
+  }
   .services-offered-plan {
     width: 65%;
     margin: 0 auto;
