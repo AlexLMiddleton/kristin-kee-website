@@ -16,7 +16,6 @@
 .other-service-title-container {
   height: 15em;
   width: 20em;
-  // transition: 0.5s ease;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,7 +36,6 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  // text-align: center;
   opacity: 0;
 }
 
@@ -84,5 +82,10 @@
   }
   .other-service-info-container {
     opacity: 1;
+  }
+  .other-service-info-container .other-service-info-paragraph {
+    font-size: 1em;
+    line-height: 1.2;
+    padding: 1% 2%;
   }
 }
