@@ -1,45 +1,51 @@
 .service-container {
-    position: relative;
-    display: flex;
-    width: 20em;
-    height: 30em;
-    border: 2px solid #999;
-    background-color: #fff;
-    color: #555;
-    margin-bottom: 2%;
+  position: relative;
+  display: flex;
+  width: 20em;
+  height: 30em;
+  border: 2px solid #999;
+  background-color: #fff;
+  color: #555;
+  margin-bottom: 2%;
 }
 
 .service-container:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .service-container-body {
-    width: 100%;
-    padding: 1% 4%;
+  width: 100%;
+  padding: 1% 4%;
 }
 
 .service-container-header {
-    text-align: center;
-    margin: 0;
-    padding: 0.5em 0 0 0;
+  text-align: center;
+  margin: 0;
+  padding: 0.5em 0 0 0;
 }
 
 .service-container-body hr {
-    width: 100%;
-    margin: .5em 0;
+  width: 100%;
+  margin: 0.5em 0;
 }
 
 .service-container-pitch {
-    font-style: italic;
+  font-style: italic;
 }
 
 .service-container-item {
-    list-style: none;
-    margin: 0;
+  list-style: none;
+  margin: 0;
 }
 
 .contact-link {
-    position: absolute;
-    bottom: .8em;
-    margin: 0 auto;
+  position: absolute;
+  bottom: 0.8em;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 1024px) {
+  .service-container:hover {
+    transform: scale(1);
+  }
 }
